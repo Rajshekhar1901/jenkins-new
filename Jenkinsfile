@@ -3,9 +3,15 @@
         agent any
         environment {
             DOCKER_HUB_CREDENTIAL_ID = 'jenkins' // Replace with your Jenkins credential ID for Docker Hub
-            DOCKER_IMAGE_NAME = "rajshekharkg/hello-docker" // Replace with your Docker Hub username and image name
+            DOCKER_IMAGE_NAME = "rajshekharkg/hello-docker2" // Replace with your Docker Hub username and image name
         }
         stages {
+            stage{
+                steps {
+                    sh 'mvn --version'
+                    sh 'docker --version'
+                }
+            }
             stage('Build Docker Image') {
                 steps {
                     script {
