@@ -1,4 +1,5 @@
-pipeline {
+    // Jenkinsfile
+    pipeline {
         agent any
         environment {
             DOCKER_HUB_CREDENTIAL_ID = 'jenkins' // Replace with your Jenkins credential ID for Docker Hub
