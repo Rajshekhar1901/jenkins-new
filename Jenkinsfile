@@ -7,11 +7,11 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                checkout scm                           // Pulls your Git repo code into Jenkins workspace
-            }
-        }
+//        stage('Checkout Code') {
+  //          steps {
+    //            checkout scm                           // Pulls your Git repo code into Jenkins workspace
+      //      }
+      //  }
         stage('Build Docker Image') {
             steps {
                 script {
